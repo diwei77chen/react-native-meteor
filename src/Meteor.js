@@ -180,14 +180,14 @@ module.exports = {
       Data.calls.splice(Data.calls.findIndex(call => call.id == message.id), 1);
     });
 
-    Data.ddp.on('nosub', message => {
-      for (var i in Data.subscriptions) {
-        const sub = Data.subscriptions[i];
-        if (sub.subIdRemember == message.id) {
-          console.warn('No subscription existing for', sub.name);
-        }
-      }
-    });
+    // Data.ddp.on('nosub', message => {
+    //   for (var i in Data.subscriptions) {
+    //     const sub = Data.subscriptions[i];
+    //     if (sub.subIdRemember == message.id) {
+    //       console.warn('No subscription existing for', sub.name);
+    //     }
+    //   }
+    // });
   },
   subscribe(name) {
     var params = Array.prototype.slice.call(arguments, 1);
