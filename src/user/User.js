@@ -4,7 +4,7 @@ import call from '../Call';
 
 const TOKEN_KEY = 'reactnativemeteor_usertoken';
 
-const AsyncStorage = require('@react-native-async-storage/async-storage').default;
+const AsyncStorage = require('@react-native-community/async-storage').default;
 
 module.exports = {
   user() {
